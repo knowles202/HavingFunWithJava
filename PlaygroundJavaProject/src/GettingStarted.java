@@ -2,7 +2,7 @@
 public class GettingStarted {
 
 	public static void main(String[] args) {
-	//	fizzBuzz(120);
+		fizzBuzz(120);
 		double finalResult = multiplyWithoutSymbols(10,200);	
 		System.out.print(finalResult);
 		}
@@ -32,7 +32,7 @@ public class GettingStarted {
 	
 	
 	// Write a method that multiplies any two numbers WITHOUT using *
-	public static double multiplyWithoutSymbols(double theFirstNumber, double theSecondNumber){
+	private static double multiplyWithoutSymbols(double theFirstNumber, double theSecondNumber){
 		int runningTotal = 0;
 		
 		for(int i = 0; i < theFirstNumber; i++){
@@ -41,5 +41,6 @@ public class GettingStarted {
 		
 		return runningTotal;
 	}
+
 
 }
