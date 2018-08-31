@@ -2,9 +2,34 @@
 public class GettingStarted {
 
 	public static void main(String[] args) {
-		fizzBuzz(120);
-		double finalResult = multiplyWithoutSymbols(10,200);	
-		System.out.print(finalResult);
+		//fizzBuzz(120);
+		//double finalResult = multiplyWithoutSymbols(10,200);
+		//System.out.print(finalResult);
+
+		/*int myNum = (10 + 5) + (2 * 10);
+		int mySecondNum = 12;
+		int myThirdNum = myNum * 2;
+
+		int myTotal = myNum + mySecondNum + myThirdNum;
+		System.out.println(myTotal); */
+
+		/*byte myAwesomeByte = 100;
+		short myAwesomeShort = 1340;
+		int myAwesomeInt = 9;
+		long myAwesomeLong = (long) 50000 + (10 * (myAwesomeByte + myAwesomeShort + myAwesomeInt));
+		float myAwesomeFloat = 5.4f;
+		double myDoubleValue = 5.25;
+
+		double weightInPounds = 185;
+		double weightInKilos = (weightInPounds * 0.45359237);
+		System.out.print(weightInKilos);
+
+		boolean myBoolean = false;
+		boolean isMale = true;*/
+
+		stringStrangler();
+
+
 		}
 	
 	// For any given Max Number, iterate through a loop and print FizzBuzz if it
@@ -40,6 +65,28 @@ public class GettingStarted {
 		}
 		
 		return runningTotal;
+	}
+
+	private static void stringStrangler()
+	{
+		String theString = "This is a string.";
+		System.out.println("theString is equal to " + theString);
+		theString = theString + ", and this is more.";
+		System.out.println("theString is equal to " + theString);
+		theString = theString + " \u00A9 2018"; //This is unicode for copyright symbol
+		System.out.println("theString is equal to " + theString);
+
+		String numberString = "250.55";
+		numberString = numberString + "49.95";
+		System.out.println("The result is " + numberString);
+
+		String lastString = "10";
+		int myInt = 50; //Java will convert this int into a string...
+		lastString = lastString + myInt;
+		System.out.println("LastString is equal to " + lastString); // right here.
+
+		
+
 	}
 
 
